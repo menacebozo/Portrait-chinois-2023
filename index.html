@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Chinois</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/54cb77f423.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="icon" href="img/icone.png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sen&amp;display=swap'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--bouton qui monte en haut de la page -->
+    <a class="btn-top" href="#top">
+        <svg src="img/direction.svg" width="24" height="20">
+            <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"></path>
+        </svg>
+    </a>
+
+    <div class="content">
+        <p>Vous pouvez appuyer sur les flèches <kbd>▲</kbd> <kbd>▼</kbd> sur le clavier ou glisser vers le haut/bas pour
+            naviguer. La molette marche aussi.</p>
+    </div>
+
+    <!--bouton modal-->
+    <section class="background">
+
+        <button id="show-modal-btn">
+            <a><i class="fa-solid fa-circle-info"></i></a>
+        </button>
+        <div id="overlay">
+            <div id="modal">
+                <h1>Mentions Légales</h1>
+
+                <h3>ÉDITEUR</h3>
+                <p>Directeur de la publication,Conception graphique et Développement : Patrick Faure, étudiant en 1ère
+                    année de
+                    l’Université Gustave Eiffel</p>
+                <p>Hébergeur : Université Gustave Eiffel</p>
+                <p>Université Gustave Eiffel : 5 boulevard Descartes - Champs-sur-Marne - 77454 Marne-la-Vallée Cedex2 -
+                    Tél
+                    : 01.60.95.75.00 - Fax : 01.60.95.75.75</p>
+
+                <h3>IMAGES</h3>
+                <p><a href="https://storyset.com/illustration/add-color/amico#263238FF&hide=&hide=complete">noir.png</a>
+
+                    <a href="https://storyset.com/illustration/camera/amico#263238FF&hide=&hide=complete">photo.png</a>
+                    <a
+                        href="https://storyset.com/illustration/headphone/amico#263238FF&hide=&hide=complete">album.png</a>
+                    <a
+                        href="https://storyset.com/illustration/flying-phoenix/amico#263238FF&hide=&hide=complete">animal.png</a>
+                    <a
+                        href="https://storyset.com/illustration/mic-drop/pana#263238FF&hide=&hide=complete">artist.png</a>
+                    <a
+                        href="https://storyset.com/illustration/gingerbread-man-cookies/pana#263238FF&hide=&hide=simple">snack.png</a>
+                    <a
+                        href="https://storyset.com/illustration/vehicle-sale/cuate#37474FFF&hide=Sign,Character&hide=complete">car.png</a>
+                </p>
+                <h3>Législation relative aux données à caractère personnel</h3>
+                <p>Le formulaire permettant la création d’une analogie personnalisée recueil votre adresse de courriel
+                    et
+                    votre adresse IP.<br>
+                    Pour toute question portant sur la collecte ou le traitement de vos données à caractère personnel
+                    par
+                    l’UPEM, vous pouvez saisir la personne responsable du traitement des données qui est : Philippe
+                    Gambette
+                    (philippe.gambette@univ-eiffel.fr)
+                    Les fichiers détenus par l'UPEM qui comportent des données à caractère personnel ne seront jamais
+                    transmis à des tiers et ne feront jamais l'objet d'une commercialisation.</p>
+                <h2>©2022 Tous droits réservés par Patrick FAURE.</h2>
+                <button id="close-modal-btn">Fermer</button>
+            </div>
+        </div>
+        <!--Page du titre -->
+        <div class="titre">
+            <h1 class="textmid" id="home">Si j'étais <span class="contour">Patrick</span>, je serais ...</h1>
+            <a href="#couleur" id="btn">DÉCOUVRIR</a>
+    </section>
+    </div>
+
+    <!--Page des si j'étais je serais-->
+    <div id="list-analogies"></div>
+
+    <!--Page de la création  des utilisateurs-->
+    <section class="titre2" id="vous">
+        <h1 class="textmid2">Si j'étais <span class="contour">Vous</span>, je serais ...</h1>
+        <a href="#Formulaire" id="btn">Crée ta catégorie</a>
+    </section>
+
+    <!--Formulaire-->
+    <section class="formu" id="Formulaire">
+        <main class="styleform">
+            <form action="" method="post">
+                <h3>Mail</h3>
+                <input type="email" placeholder="Ton mail" id="mail" required>
+                <h3>Si j'étais ...</h3>
+                <input type="text" placeholder="(exemple:un objet,une star etc...)" id="analogie" required>
+                <h3>Je serais ...</h3>
+                <input type="text" placeholder="(exemple:un pinceau,Chris Evans etc...)" id="valeurAnalogie" required>
+                <h3>Images</h3>
+                <input type="url" id="imganalogie" name="imganalogie" placeholder="L'url d'une image" required>
+                <h3>Arguments</h3>
+                <textarea class="arg" type="text" placeholder="(exemple:pourquoi vous seriez ça)" id="arganalogie"
+                    cols="40" rows="5" spellcheck="true"></textarea>
+                <p class="formbtn">
+                    <input type="submit" value="Créer et Envoyer" id="sub" name="sub">
+                </p>
+                <div id="message"></div>
+            </form>
+        </main>
+    </section>
+
+    <!--Pages des si j'étais je serais des utilisateurs -->
+    <div id="you"></div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

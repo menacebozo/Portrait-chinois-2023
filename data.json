@@ -1,0 +1,58 @@
+[
+    {
+        "analogie": "une couleur",
+        "Valeuranalogie": " le noir",
+        "justify": "La couleur noire est reconnue pour instaurer une certaine élégance et un style contemporain aux pièces qui en sont parées. Cette couleur qui absorbe la lumière est préconisée dans une chambre, un séjour ou une salle pour une ambiance chic, moderne qui évoque la sérénité du style zen et japonisant. L'élégance du noir est ce qui me plait tant dans cette couleur.",
+        "img": "img/noir.png",
+        "id": "couleur",
+        "down": "\u0023objet"
+    },
+    {
+        "analogie": "un objet",
+        "Valeuranalogie": " un appareil photo",
+        "justify": "L'appareil photo permet de « capter » la réalité. Il peut représenter une partie du cerveau allouée à cette fonction, le moment où nous capturons une image précise de la réalité. Prendre une photo, c'est prendre acte d'une réalité, mais c'est aussi la mise en mémoire du souvenir. Parfois, je me sens comme un appareil photo, ces petits moments de la vie de tous les jours me remontant le moral, j'y tiens, et ils resteront gravés dans ma mémoire.",
+        "img": "img/photo.png",
+        "id": "objet",
+        "down": "\u0023album"
+    },
+    {
+        "analogie": "un album",
+        "Valeuranalogie": " 'Split' de JOSMAN",
+        "justify": "JOSMAN est un rappeur français apparu sur la scène du rap français depuis 2015. En 2020, il sort 'Split', son 2ème album studio. Ce que j'aime tant dans cet album, c'est que 'Split', comme le personnage principal du film d'horreur éponyme, a une multitude de facettes, chaque son s'écoute dans une ambiance différente, je trouve que c'est cela qui fait tout son charme à cet album. ",
+        "img": "img/album.png",
+        "id": "album",
+        "down": "\u0023animal"
+    },
+    {
+        "analogie": "un animal",
+        "Valeuranalogie": " le phoenix",
+        "justify": "Cet oiseau chimérique à la beauté merveilleuse, capable de vivre jusqu'à mille ans, renaît sans cesse de ses cendres. Incarnation de la force éternelle depuis l'Antiquité, il symbolise désormais l'espoir d'un monde résilient. Comme le phoenix, même après avoir chuté au plus bas, j'ai su garder espoir et ne pas baisser les bras, j'ai pu apprendre de mes erreurs et devenir une meilleure version de moi même, comme si je renaissais de mes cendres. ",
+        "img": "img/animal.png",
+        "id": "animal",
+        "down": "\u0023artiste"
+    },
+    {
+        "analogie": "un artiste",
+        "Valeuranalogie": " Luther",
+        "justify": "Luther est un jeune artiste français de seulement 18 ans. Adepte d’un rap nerd, à cœur ouvert et à l’esthétique type “bedroom producer”, le rappeur de 18 ans a signé, début juin, l’un des projets les plus intéressants des prémisses de l’été. Présentation du prodige à la fois geek et rappeur. C'est un rappeur que j'apprécie beaucoup et sur qui il faudrait miser pour les mois voire pour les prochaines années à venir.",
+        "img": "img/artist.png",
+        "id": "artiste",
+        "down": "\u0023gâteau"
+    },
+    {
+        "analogie": "un gâteau",
+        "Valeuranalogie": " un männele",
+        "justify": "Un männele est une brioche en forme de bonhomme, préparée par les boulangers de tradition germanique pour la Saint-Nicolas, ainsi que par des familles alsaciennes, lorraines, et plus généralement allemandes. Ces petits bonshommes tout sympatiques et bien élevés représentent pour moi l'innocence et le sens de la fête, vu qu'ils sont préparés à l'occasion des fêtes de fin d'année. Au final, je suis assez similaire à ces petits bonshommes pleins d'entrain !",
+        "img": "img/snack.png",
+        "id": "gateau",
+        "down": "\u0023véhicule"
+    },
+    {
+        "analogie": "un véhicule",
+        "Valeuranalogie": " la voiture",
+        "justify": "J'aimais les voitures depuis mon plus jeune âge, comme la plupart des jeunes enfants. J'ai grandi avec un père passioné par l'automobile et ai donc y prendre goût très rapidement. J'apprécie plus particulièrement la gamme sport de honda. ",
+        "img": "img/car.png",
+        "id": "vehicule",
+        "down": "\u0023vous"
+    }
+]

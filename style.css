@@ -1,0 +1,464 @@
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+
+
+
+html {
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/fond.jpg);
+    background-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0 auto;
+    cursor: url(img/cursor.png), auto;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: scroll;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* titre qui flotte*/
+.titre {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    animation: floating 6s ease-in-out 0s infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.textmid {
+    position: absolute;
+    color: #ffffff;
+    font-size: 5em;
+    text-align: center;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+
+}
+
+
+/* titre secondaire (bas de page) */
+.titre2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.textmid2 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 5em;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+/* bouton decouvrir et crée ta catégorie */
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    font-size: 1, 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transform: translateY(100px);
+}
+
+#btn:hover {
+    background-color: #fff;
+    color: #2c2c2c;
+    font-weight: 700;
+}
+
+/* scrollbar  */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 100px;
+}
+
+/* classe des section de si j'étais, je serais ... */
+
+.sec {
+    background-image: rgb (0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1800px;
+    padding: 500px;
+    margin: 10rem auto 0 auto;
+    max-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec h1 {
+    display: flex;
+    justify-content: start;
+    color: #ffffff;
+    font-size: 4em;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.sec h2 {
+    display: flex;
+    justify-content: start;
+    color: black;
+    -webkit-text-fill-color: rgb(70, 70, 70, 0.0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    padding-left: 19px;
+    font-size: 3em;
+    min-width: 600px;
+    margin-top: 65px;
+
+}
+
+.sec p {
+    display: flex;
+    justify-content: start;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 500;
+    block-size: 700px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.image {
+    float: right;
+    flex-basis: 50%;
+    display: block;
+    max-height: 650px;
+    max-width: 40%;
+}
+
+/* Pour les valeurs d'analogies */
+.sec h1 span {
+    color: black;
+    -webkit-text-fill-color: rgb(70, 70, 70, 0.0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    padding-left: 19px;
+}
+
+
+
+/* Formulaire */
+form {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.formu {
+    background: url(img/formu.jpg);
+    display: flex;
+    margin: 0 auto;
+    height: 110vh;
+}
+
+.styleform {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 400px;
+}
+
+input[type="submit"] {
+    background-color: #2a2b2a;
+    border: none;
+    color: rgb(206, 206, 206);
+    font-size: 1.1rem;
+    box-shadow: 4px 4px rgb(26, 26, 26);
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+input:required {
+    background-color: #ebebeb;
+}
+
+input:required:valid {
+    background-color: #c5ffcf;
+}
+
+.arg {
+    height: 100px;
+    overflow-wrap: break-word;
+}
+
+.formbtn {
+    padding-top: 20px;
+}
+
+h3 {
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: double;
+}
+
+textarea {
+    resize: none;
+    border-radius: 7px;
+}
+
+/* texte contour */
+.contour:nth-child(odd) {
+    color: black;
+    -webkit-text-fill-color: rgb(70, 70, 70, 0.0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+
+/* mentions légales */
+.volet-visible {
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    height: auto;
+    overflow: hidden;
+    cursor: url(img/cursorhover.png);
+}
+
+.volet-invisible {
+    text-align: center;
+    color: #ffffff;
+    height: 3em;
+    overflow: hidden;
+    cursor: url(img/cursorhover.png);
+}
+
+footer {
+    height: 8em;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* classe pour les justification de texte */
+.justify {
+    text-align: center;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    overflow-wrap: break-word;
+}
+
+/* bouton haut et bas de page*/
+.top {
+    position: relative;
+    color: #ffffff;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+}
+
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mentions légales */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+    max-width: 1300px;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 30px;
+    margin: 10rem auto 0 auto;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 104, 104);
+    flex-direction: column;
+    text-align: center;
+}
+
+#show-modal-btn {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    height: 70px;
+    width: 70px;
+}
+
+#show-modal-btn:hover {
+    color: rgb(160, 160, 160);
+}
+
+#close-modal-btn {
+    background-color: #3d3d3d;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 25px;
+    bottom: 18px;
+}
+
+
+
+/*bouton qui vas en haut*/
+.btn-top {
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+    margin: 20px;
+    fill: #ffffff;
+    z-index: 1;
+}
+
+/*balises a pour les liens*/
+a:link {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #858585;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.content {
+    width: 90%;
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    z-index: 99;
+    font-size: 0.8em;
+}
+
+.content p {
+    margin: 0.5em auto;
+}
+
+.content kbd {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0.9em;
+    vertical-align: text-top;
+}
+.cursor {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+}
